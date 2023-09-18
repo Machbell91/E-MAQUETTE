@@ -1,8 +1,9 @@
-.Welcome{
+.Tprincipal{
     display: flex;
     justify-content: center;
     padding-top: 1em;
     padding-bottom: 1em;  
+    text-decoration: underline;
 }
 
 main{
@@ -12,4 +13,12 @@ font-weight: lighter;
 .dice1{
   width: 100%;
   padding-bottom:1em;
+}
+h3{
+    padding-top: 0.75em;
+    padding-bottom: 0.75em; 
+    text-decoration: underline dotted;
+}
+li{
+    padding-bottom: 0.5em;
 }
