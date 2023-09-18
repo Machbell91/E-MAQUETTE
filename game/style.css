@@ -25,3 +25,27 @@ li{
 .teamsign{
     font-style: italic;
 }
+
+.nav-link{
+    border-right: 2px solid black !important;
+    border-left: 2px solid black !important;
+    margin-right: 2em;
+    margin-left: 2em;
+    
+
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+   
+}
+a{
+    text-decoration: none;
+    color: rgb(29, 127, 90);
+}
+:hover.nav-link{
+    color: rgb(246, 7, 99)!important; 
+}
+
