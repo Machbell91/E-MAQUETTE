@@ -1,8 +1,8 @@
 .Tprincipal{
     display: flex;
     justify-content: center;
-    padding-top: 1em;
-    padding-bottom: 1em;  
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;  
     text-decoration: underline;
 }
 
@@ -56,3 +56,6 @@ img {
         
     }
 
+aside{
+    max-height: 100%;
+}
