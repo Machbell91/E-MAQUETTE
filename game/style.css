@@ -69,3 +69,18 @@ aside{
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
+.firstplayer{
+  background-color: whitesmoke;
+  height: 500px;
+  width: 465px;
+}
+.secondplayer{
+  background-color: white;
+  height: 500px;
+  width: 465px;
+}
+.GameDice{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
