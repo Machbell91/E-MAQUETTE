@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LudoDés - L'Harmonie Ludique</title>
   <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link href="/dice.game.app.css" rel="stylesheet" type="text/css" />
   <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
   <script src=”dice.game.app.js”></script>
@@ -57,15 +58,30 @@
         <p style="text-align: center;">Vous avez accès a un lecteur de musique sur cette partie du site afin de jouer dans de la bonne humeur</p>
     </div>
     <div class="container" id="Game">
-        <div class="container GameDice">
-          <div class="container firstplayer" id="player">
-            
-          </div>
-          <div class="container secondplayer" id="player">
-            
-          </div>
+    <div class="container GameDice">
+      
+      <div class="container firstplayer player playerA player--active">
+        <h2 class="name" id="nameA" style="font-weight: lighter;">Player A</h2>
+          <p class="score" id="scoreA">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="currentA" style="color: white;">0</p>
         </div>
+      </div>
+      <div class="container secondplayer player playerB">
+        <h2 class="name" id="nameB" style="font-weight: lighter;">Player B</h2>
+        <p class="score" id="scoreB">0</p>
+        <div class="current">
+        <p class="current-label">Current</p>
+        <p class="current-score" id="currentB" style="color: white;">0</p>
+      </div>
+      </div>
+      <img src="dice-5.png" alt="Playing dice" class="container dice" />
+      <button class="btn BtNew"> A new game</button>
+      <button class="btn BtRollD"> Roll the dice</button>
+      <button class="btn BtHold"> Hold</button>
     </div>
+</div>
   </main>
 
 <!-- Footer -->

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+
+#Game{
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    width: 1000px;
+    background: radial-gradient(ellipse at top, #e66465, transparent),
+                radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.firstplayer{
+  background-color: whitesmoke;
+  height: 500px;
+  width: 465px;
+}
+.secondplayer{
+  background-color: white;
+  height: 500px;
+  width: 465px;
+}
+.GameDice{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.player{
+  text-align: center;
+  padding-top: 5em;
+  text-transform: uppercase;
+}
+.score{
+  font-size: 5em;
+  color: #f26e6e;
+  padding-bottom: 1em;
+}
+.current {
+color: #000000;
+background-color: #ff0000;
+margin-left: 4rem;
+margin-right: 4rem;
+}
