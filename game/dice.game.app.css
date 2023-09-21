@@ -52,14 +52,12 @@ img {
       
   }
 ------>
-
 #Game{
 
-  background: radial-gradient(ellipse at top, #e66465, transparent),
-              radial-gradient(ellipse at bottom, #4d9f0c, transparent );
   
 
 }
+
 .firstplayer{
   background-color: rgb(255, 255, 255);
   width: 50%;
@@ -69,13 +67,16 @@ img {
   width: 50%;
 
 }
+
 .GameDice{
+  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: green;
   border-style:groove;
  }
+
 .player{
   display: flex;
   flex-direction: column;
@@ -104,6 +105,7 @@ img {
 color: black;
 font-weight:normal;
 }
+
 .current-score{
 font-size: 3em;
 color: white;
@@ -136,7 +138,7 @@ box-shadow: 0 1rem 2rem #069d75;
 }
 
 .player--active {
-background-color:#2b6621;
+background-color:#bde4b6;
 }
 .player--active .name {
 font-weight: 850;
@@ -174,12 +176,16 @@ font-size: 7em;
 font:lighter;
   }
 .RL{
+  display: flex;
+  justify-content: center;
   top: -8rem;
   font-size: 7em;
   font:lighter;
   }
 
 .HLD{
+  display: flex;
+  justify-content: center;
   top: -3rem;
   font-size: 7em;
   font:lighter;
@@ -195,5 +201,18 @@ font:lighter;
   position: static;
 }
 
+.joker{
+  padding: 10px;
+  margin: 5%;
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+  radial-gradient(ellipse at bottom, #4d9f0c, transparent );
+  background-clip: padding-box;
+  border:5px thick rgb(12, 138, 184);
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+}
+
+.muziq{
+  margin-top: -80px;
+}
   
 
