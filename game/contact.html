@@ -6,49 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LudoDés - L'Harmonie Ludique</title>
     <link href="/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
     <script src=”contact.js”></script>
   <!-- Liens CDN de Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.x.x/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- HEADER -->
-      <!-- BANNER -->
+   <!-- HEADER -->
+    <!-- BANNER -->
     <div class="container" class="dice1">
-        <img src="/img/img-6Dvy9uOeeMkcnFSY6Hknw.jpeg" alt="a dice between two men" class="dice1">
+      <img src="/img/img-6Dvy9uOeeMkcnFSY6Hknw.jpeg" alt="a dice between two men" class="dice1">
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- logo et liens de navigation -->
-            <a class="navbar-brand" href="#">LudoDés</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/regle.html">Règle</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/game.html">Le Jeu du "D"</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/propos.html">À propos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" style="font-size: larger; background-color: black; color: azure;" href="/contact.html">Contact</a>
-                </li>
-                <!-- Ajoutez d'autres liens au besoin -->
-              </ul>
-            </div>
-        </div>
-    </nav>
+      <div class="container">
+          <!-- logo et liens de navigation -->
+          <a class="navbar-brand" href="#">LudoDés</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="font-size: larger; background-color: black; color: azure;" href="/index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/regle.html">Règle</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/game.html">Le Jeu du "D"</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/propos.html">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <!-- Ajoutez d'autres liens au besoin -->
+            </ul>
+          </div>
+      </div>
+  </nav>
 
   <!-- Contenu -->
 
@@ -69,20 +67,20 @@
         <form action="your_server_script.php" method="post">
           <div class="mb-3">
             <label for="contactName" class="form-label">Nom complet</label>
-            <input type="text" class="form-control" id="contactName" name="name" required>
+            <input type="text" class="form-control" id="contactName" name="name" placeholder="TANO Ahsoka" required>
           </div>
 
           <div class="mb-3">
             <label for="contactEmail" class="form-label">Adresse e-mail</label>
-            <input type="email" class="form-control" id="contactEmail" name="email" required>
+            <input type="email" class="form-control" id="contactEmail" name="email" placeholder="abcd@redmail.com" required>
           </div>
 
           <div class="mb-3">
             <label for="contactMessage" class="form-label">Votre message</label>
-            <textarea class="form-control" id="contactMessage" rows="4" name="message" required></textarea>
+            <textarea class="form-control" id="contactMessage" rows="4" name="message" placeholder="Votre texte"required></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary"onclick="myFunction()>Envoyer le message</button>
+          <button type="submit" class="btn btn-primary" id="kontakt"><a href="chrome://dino/" style="color: aliceblue;">Envoyer le message</a></button>
         </form>
       </div>
     </div>
@@ -122,11 +120,17 @@
 </footer>
   <!-- JS de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.x.x/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function myFunction() {
-      alert("Erreur ! Vous ne pouvez pas nous contacter....Pour le moment");
-    }
-    </script>
+    <script>
+const myButton = document.getElementById('kontakt');
+function myFunction() {
+
+  alert('Cette fonction est pas encore en service. Mais voici un bon petit clip musical');
+  window.location.href = 'https://youtu.be/L7spCJxloLY?si=WOsATH-pG78kF4Ky';
+
+}
+myButton.addEventListener('click', myFunction);
+</script>
+
 </body>
 
 </html>

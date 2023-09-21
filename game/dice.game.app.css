@@ -61,7 +61,9 @@ img {
 ------>
 #Game{
 
-  
+  background-color: #e66465;
+  padding-inline: 2em;
+  padding-top: 0.50em;
 
 }
 
@@ -148,7 +150,7 @@ box-shadow: 0 1rem 2rem #069d75;
 background-color:#bde4b6;
 }
 .player--active .name {
-font-weight: 850;
+font-weight: 650;
 color:rgb(0, 0, 0);
 }
 .player--active .score {
@@ -178,9 +180,9 @@ opacity: 2;
 }
 
 .NG{
-top: -28rem;
-font-size: 7em;
-font:lighter;
+  top: -28rem;
+  font-size: 7em;
+  font:lighter;
   }
 .RL{
   display: flex;
