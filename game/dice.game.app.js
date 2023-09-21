@@ -44,7 +44,7 @@ if (playing) {
 scores[activePlayer] += currentscore;
 document.getElementById(`score--${activePlayer}`).textContent =
 scores[activePlayer];
-if (scores[activePlayer] >= 20) {
+if (scores[activePlayer] >= 100) {
 playing = false;
 document.getElementById(`score--${activePlayer}`).textContent = 'Win!';
 switchPlayer();
