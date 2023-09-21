@@ -1,34 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+.Tprincipal{
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;  
+  text-decoration: underline;
+}
+.dice1{
+width: 100%;
+padding-bottom:1em;
+}
+h3{
+  padding-top: 0.75em;
+  padding-bottom: 0.75em; 
+  text-decoration: underline dotted;
+}
+li{
+  padding-bottom: 0.5em;
+}
+.teamsign{
+  font-style: italic;
+}
 
+.nav-link{
+  border-right: 2px solid black !important;
+  border-left: 2px solid black !important;
+  margin-right: 2em;
+  margin-left: 2em;
+  
+
+}
+.navbar-nav{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+ 
+}
+a{
+  text-decoration: none;
+  color: rgb(29, 127, 90);
+}
+:hover.nav-link{
+  color: rgb(246, 7, 99)!important; 
+}
+img {
+
+      max-height : 400px;
+      width : auto;
+      object-fit: cover;
+      
+  }
+------>
 
 #Game{
-    display: flex;
-    justify-content: center;
-    height: 550px;
-    width: 1000px;
-    background: radial-gradient(ellipse at top, #e66465, transparent),
-                radial-gradient(ellipse at bottom, #4d9f0c, transparent);
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+  width: 2000px;
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+              radial-gradient(ellipse at bottom, #4d9f0c, transparent );
+
 }
 .firstplayer{
   background-color: whitesmoke;
-  height: 500px;
-  width: 465px;
 }
 .secondplayer{
   background-color: white;
-  height: 500px;
-  width: 465px;
 }
 .GameDice{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border: green;
+  border-style:groove;
 }
 .player{
   text-align: center;
-  padding-top: 5em;
+  padding-top: 1em;
   text-transform: uppercase;
 }
 .score{
@@ -37,8 +83,98 @@
   padding-bottom: 1em;
 }
 .current {
-color: #000000;
-background-color: #ff0000;
-margin-left: 4rem;
-margin-right: 4rem;
+background-color: #e26565;
+margin-top:6em;
+margin-left: 14em;
+margin-right:14em;
 }
+
+.current-label {
+color: black;
+font-weight:normal;
+}
+.current-score{
+font-size: 3em;
+color: white;
+}
+.name{
+  font-weight: lighter;
+  padding-top: 2em;
+}
+
+.btn{
+  left: 50%;
+  transform: translateX(-50%);
+  position:absolute;
+  color: #f2eded;
+  width: 11em;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 50rem;
+}
+.btn:active {
+transform: translate(-50%, 1px);
+box-shadow: 0 1rem 2rem #f9960b;
+}
+.btn--new,.btn--roll,.btn--hold{
+  text-transform: uppercase;
+  font-size: 5em;
+  background-color: #edebe9 !important;
+}
+
+.player--active {
+background-color:#000000;
+}
+.player--active .name {
+font-weight: 850;
+color:white;
+}
+.player--active .score {
+font-weight: 650;
+color:white;
+}
+.player--active .current-label {
+color:white;
+}
+.player--active .current {
+opacity: 2;
+}
+
+.buttonimg{
+  width: 15%;
+}
+
+.music{
+  margin: -5%;
+}
+
+.booton{
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%) !important;
+  position: relative;
+}
+
+.NG{
+top: -30rem;
+  }
+.RL{
+  top: -8rem;
+  }
+
+.HLD{
+  top: -3rem;
+  }
+
+.dicelogo{
+    top: -23rem;
+    background-color: whitesmoke;
+  }
+
+.dice{
+  width: 30% !important;
+  position: static;
+}
+
+  
+

@@ -5,17 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LudoDés - L'Harmonie Ludique</title>
-  <link href="/style.css" rel="stylesheet" type="text/css" />
   <link href="/dice.game.app.css" rel="stylesheet" type="text/css" />
-  <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-  <script src=”dice.game.app.js”></script>
+  
   <!-- Liens CDN de Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.x.x/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- HEADER -->
+   <!-- HEADER -->
       <!-- BANNER -->
       <div class="container" class="dice1">
         <img src="/img/jeu.png" alt="a dice between two men" class="dice1">
@@ -50,41 +46,51 @@
             </div>
         </div>
     </nav>
-
-  <!-- Contenu -->
-  <main class="container">
+<main class="container">
     <div class="container">
         <h1 class="Tprincipal">LE JEU DE "D"</h1>
         <p style="text-align: center;">Vous avez accès a un lecteur de musique sur cette partie du site afin de jouer dans de la bonne humeur</p>
     </div>
-    <div class="container" id="Game">
-    <div class="container GameDice">
-      
-      <div class="container firstplayer player playerA player--active">
-        <h2 class="name" id="nameA" style="font-weight: lighter;">Player A</h2>
-          <p class="score" id="scoreA">0</p>
-        <div class="current">
+<div class="container" id="Game">
+    <div class="GameDice">
+<div class="player firstplayer player--0 player--active">
+        <h2 class="name" id="name--0">Player A</h2>
+          <p class="score" id="score--0">0</p>
+          <div class="current">
           <p class="current-label">Current</p>
-          <p class="current-score" id="currentA" style="color: white;">0</p>
-        </div>
-      </div>
-      <div class="container secondplayer player playerB">
-        <h2 class="name" id="nameB" style="font-weight: lighter;">Player B</h2>
-        <p class="score" id="scoreB">0</p>
-        <div class="current">
-        <p class="current-label">Current</p>
-        <p class="current-score" id="currentB" style="color: white;">0</p>
-      </div>
-      </div>
-      <img src="dice-5.png" alt="Playing dice" class="container dice" />
-      <button class="btn BtNew"> A new game</button>
-      <button class="btn BtRollD"> Roll the dice</button>
-      <button class="btn BtHold"> Hold</button>
-    </div>
+          <p class="current-score" id="current--0">0</p>
+          </div>
 </div>
-  </main>
-
-<!-- Footer -->
+<section class="secondplayer player player--1">
+          <h2 class="name" id="name--1">Player B</h2>
+          <p class="score" id="score--1">0</p>
+          <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+          </div>
+</div>
+<div class="container booton">
+          
+          <button class="btn btn--new NG">
+          <span><img src="/img/+.png"class="buttonimg"></span>         
+          A new game
+          </button>
+          <button class="btn dicelogo">
+            <img src="/img/dice-png-18.png" class="dice"/>
+          </button>
+          <button class="btn btn--roll RL">
+          <span><img src="/img/reload.png"class="buttonimg"></span>   
+          Roll the dice
+          </button>
+          <button class="btn btn--hold HLD"> 
+          <span><img src="/img/box.png"class="buttonimg"></span>   
+          Hold on
+          </button>
+</div>
+          </div>
+      </div>
+</main>
+  <!-- Footer -->
 
 <footer class="bg-dark text-white mt-5">
   <div class="container py-4">
@@ -113,11 +119,11 @@
           </div>
       </div>
   </div>
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-b650f219-4820-4105-9d48-5324be1f88c6"></div>
+
 </footer>
+
   <!-- JS de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.x.x/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dice.game.app.js"></script>
 </body>
-
 </html>
