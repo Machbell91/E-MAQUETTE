@@ -54,16 +54,20 @@ img {
 ------>
 
 #Game{
-  width: 2000px;
+
   background: radial-gradient(ellipse at top, #e66465, transparent),
               radial-gradient(ellipse at bottom, #4d9f0c, transparent );
+  
 
 }
 .firstplayer{
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
 }
 .secondplayer{
   background-color: white;
+  width: 50%;
+
 }
 .GameDice{
   display: flex;
@@ -71,9 +75,11 @@ img {
   justify-content: center;
   border: green;
   border-style:groove;
-}
+ }
 .player{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 1em;
   text-transform: uppercase;
 }
@@ -83,10 +89,15 @@ img {
   padding-bottom: 1em;
 }
 .current {
-background-color: #e26565;
-margin-top:6em;
-margin-left: 14em;
-margin-right:14em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.BtnbackG{
+  background-color: #e66465;
+  padding-inline: 2em;
+  padding-top: 0.50em;
+  
 }
 
 .current-label {
@@ -96,6 +107,9 @@ font-weight:normal;
 .current-score{
 font-size: 3em;
 color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .name{
   font-weight: lighter;
@@ -106,7 +120,6 @@ color: white;
   left: 50%;
   transform: translateX(-50%);
   position:absolute;
-  color: #f2eded;
   width: 11em;
   cursor: pointer;
   transition: all 0.2s;
@@ -114,27 +127,27 @@ color: white;
 }
 .btn:active {
 transform: translate(-50%, 1px);
-box-shadow: 0 1rem 2rem #f9960b;
+box-shadow: 0 1rem 2rem #069d75;
 }
 .btn--new,.btn--roll,.btn--hold{
   text-transform: uppercase;
-  font-size: 5em;
-  background-color: #edebe9 !important;
+  font-size: 7em;
+  font:lighter;
 }
 
 .player--active {
-background-color:#000000;
+background-color:#2b6621;
 }
 .player--active .name {
 font-weight: 850;
-color:white;
+color:rgb(0, 0, 0);
 }
 .player--active .score {
 font-weight: 650;
-color:white;
+color:rgb(166, 73, 73);
 }
 .player--active .current-label {
-color:white;
+color:rgb(7, 7, 7);
 }
 .player--active .current {
 opacity: 2;
@@ -156,23 +169,29 @@ opacity: 2;
 }
 
 .NG{
-top: -30rem;
+top: -28rem;
+font-size: 7em;
+font:lighter;
   }
 .RL{
   top: -8rem;
+  font-size: 7em;
+  font:lighter;
   }
 
 .HLD{
   top: -3rem;
+  font-size: 7em;
+  font:lighter;
   }
 
 .dicelogo{
-    top: -23rem;
+    top: -21rem;
     background-color: whitesmoke;
   }
 
 .dice{
-  width: 30% !important;
+  width: 50% !important;
   position: static;
 }
 
